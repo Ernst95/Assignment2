@@ -18,6 +18,12 @@ public class DivisionTest{
     }
 
     @Test
+    public void testDivision() throws Exception{
+        div = new Division(4.0,2.0);
+        assertNotNull(div);
+    }
+
+    @Test
     public void setNum1() throws Exception {
         div = new Division();
         div.setNum1(4.0);

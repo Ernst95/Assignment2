@@ -18,6 +18,12 @@ public class SubtractionTest {
     }
 
     @Test
+    public void testSubtraction() throws Exception{
+        sub = new Subtraction(4.0,2.0);
+        assertNotNull(sub);
+    }
+
+    @Test
     public void setNum1() throws Exception {
         sub = new Subtraction();
         sub.setNum1(4.0);

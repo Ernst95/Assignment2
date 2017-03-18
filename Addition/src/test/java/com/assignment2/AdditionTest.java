@@ -19,6 +19,12 @@ public class AdditionTest{
     }
 
     @Test
+    public void testAddition() throws Exception{
+        add = new Addition(4.0,2.0);
+        Assert.assertNotNull(add);
+    }
+
+    @Test
     public void testSetNum1() throws Exception {
         add = new Addition();
         add.setNum1(4.0);

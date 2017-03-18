@@ -10,11 +10,17 @@ import static org.junit.Assert.*;
  */
 public class MultiplicationTest {
 
-    Multiplication mul = new Multiplication();
+    Multiplication mul;
 
     @Before
     public void setUp() throws Exception {
         System.out.println("Before class");
+    }
+
+    @Test
+    public void testMultiplication() throws Exception{
+        mul = new Multiplication(4.0,2.0);
+        assertNotNull(mul);
     }
 
     @Test
